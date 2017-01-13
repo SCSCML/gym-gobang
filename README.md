@@ -3,7 +3,7 @@ gobang with gym framework
 
 # notice
 
-board size is 14 by 14
+board size is 15 by 15
 
 # source from lenwei
 
