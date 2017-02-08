@@ -1,5 +1,6 @@
 from __future__ import print_function
 from builtins import range
+from Agent import Agent
 
 #----------------------------------------------------------------------
 # evaluation: ÆåÅÌÆÀ¹ÀÀà£¬¸øµ±Ç°ÆåÅÌ´ò·ÖÓÃ
@@ -442,10 +443,11 @@ class evaluation (object):
 #----------------------------------------------------------------------
 # DFS: ²©ÞÄÊ÷ËÑË÷
 #----------------------------------------------------------------------
-class searcher (object):
+class searcher (Agent):
 
     # ³õÊ¼»¯
-    def __init__ (self):
+    def __init__ (self,**kwargs):
+        super().__init__(**kwargs)
         self.evaluator = evaluation()
         self.board = [ [ 0 for n in range(15) ] for i in range(15) ]
         self.gameover = 0
