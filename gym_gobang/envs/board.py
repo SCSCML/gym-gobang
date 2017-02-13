@@ -1,6 +1,7 @@
 from .rule import Standard
 import string,sys,copy
 
+
 class Board:
     def __init__(self,rule=Standard):
         self.rule = rule
