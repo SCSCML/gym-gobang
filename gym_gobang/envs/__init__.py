@@ -1,1 +1,1 @@
-from gym-goban.envs.gobang_env import GobangEnv
+from gym_gobang.envs.gobang_env import GobangEnv

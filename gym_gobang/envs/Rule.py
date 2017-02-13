@@ -16,10 +16,10 @@ class Rule:
         """specific color check"""
         raise NotImplementedError
 
-class Renju(Rule):
-    name="renju"
-    board_size=15
-    #TODO
+#class Renju(Rule):
+#    name="renju"
+#    board_size=15
+#    #TODO
 
 class Standard(Rule):
     name="standard"
@@ -54,6 +54,5 @@ class Standard(Rule):
     
 
 if __name__=="__main__":
-    print(Renju.name)
-    Renju.opening()
+    print(Standard.name)
     

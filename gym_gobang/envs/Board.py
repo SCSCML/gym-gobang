@@ -1,4 +1,4 @@
-from Rule import Standard
+from .rule import Standard
 import string,sys,copy
 
 class Board:
@@ -123,7 +123,6 @@ class Board:
         print(self.text[:-1])
         mark = ('. ', 'O ', 'X ')
         nrow = 0
-        #self.check()
         color1 = 10
         color2 = 13
         for row in range(self.board_size):

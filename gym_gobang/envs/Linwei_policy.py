@@ -1,6 +1,4 @@
-from __future__ import print_function
-from builtins import range
-from Agent import Agent
+from .agent import Agent
 
 #----------------------------------------------------------------------
 # evaluation: ÆåÅÌÆÀ¹ÀÀà£¬¸øµ±Ç°ÆåÅÌ´ò·ÖÓÃ

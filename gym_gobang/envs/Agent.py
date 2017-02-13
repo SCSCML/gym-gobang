@@ -6,6 +6,7 @@ class Agent:
         self.score={"win":0,"lost":0,"draw":0}
         self.introduction=""
         self.board=None
+        self.isHuman=None
 
         for k,v in kwargs.items():
             setattr(self,k,v)
@@ -26,6 +27,7 @@ introduction : {4}
 class Human(Agent):
     def __init__(self,**kwargs):
         super().__init__(**kwargs)
+        self.isHuman=True
     def getCommand(self):
         """ gym-gobang original method"""
         return input().strip('\r\n\t ')
