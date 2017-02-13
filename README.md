@@ -1,20 +1,24 @@
 # gym-gobang
-gobang with gym framework (only python3)
+
+OpenAI Gym [gobang](https://en.wikipedia.org/wiki/Go_Bang) environment
+
+# Dependencies
+
+- Python3
+- [gym](https://github.com/openai/gym)
 
 # Installation
 
 ```bash
+git clone https://github.com/SCSCML/gym-gobang
 cd gym-gobang
-sudo pip install -e .
+pip install -e .
 ```
 
-# info
+# Default configuration
+- Board size : 15 by 15
+- Rule : 'Free rule' without limitation. 
 
-Default board size is 15 by 15
-Default rule is 'Free rule' without limitation. 
+# Credits
 
-# source from lenwei
-
-main gobang game engine source came from lenwei
-
-https://github.com/skywind3000/gobang
+[gobang engine by lenwei](https://github.com/skywind3000/gobang)
