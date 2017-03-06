@@ -6,6 +6,11 @@ class Linwei_Agent(searcher):
         self.isHuman=False
         self.level=2
 
+    def search (self):
+        _,row,col = super().search(self.color, depth=1)
+        return row * self.board.board_size + col
+
+
 if __name__=="__main__":
     #Linwei_Agent().search()
     pass
