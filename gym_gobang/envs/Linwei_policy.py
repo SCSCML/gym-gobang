@@ -447,7 +447,7 @@ class searcher (Agent):
     def __init__ (self,**kwargs):
         super().__init__(**kwargs)
         self.evaluator = evaluation()
-        self.board = [ [ 0 for n in range(15) ] for i in range(15) ]
+        #self.board = [ [ 0 for n in range(15) ] for i in range(15) ]
         self.gameover = 0
         self.overvalue = 0
         self.maxdepth = 3
